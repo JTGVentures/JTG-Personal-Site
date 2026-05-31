@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=28">
+  <link rel="stylesheet" href="styles.css?v=30">
 </head>
 <body>
   <nav class="nav">
@@ -38,27 +38,28 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form reveal in">
+        <form class="contact-form reveal in" action="https://formspree.io/f/maqkzdey" method="POST">
           <p style="font-family:var(--serif);font-style:italic;font-size:22px;color:var(--ivory-soft);margin-bottom:12px;max-width:460px;line-height:1.5">
             If something here resonated — I'm open to the conversation.
           </p>
 
           <div class="contact-field">
             <label><span class="num">i.</span>Name</label>
-            <input type="text" name="name" placeholder="Your name">
+            <input type="text" name="name" placeholder="Your name" required>
           </div>
           <div class="contact-field">
             <label><span class="num">ii.</span>Email</label>
-            <input type="email" name="email" placeholder="hello@somewhere.com">
+            <input type="email" name="email" placeholder="hello@somewhere.com" required>
           </div>
           <div class="contact-field">
             <label><span class="num">iii.</span>Message</label>
-            <textarea rows="3" name="message" placeholder="What brings you here."></textarea>
+            <textarea rows="3" name="message" placeholder="What brings you here." required></textarea>
           </div>
 
           <button class="contact-submit" type="submit">
             <span>Send Message</span>
           </button>
+          <p class="contact-error" role="alert" hidden></p>
         </form>
 
         <div class="contact-side reveal reveal-d2 in">
@@ -69,7 +70,6 @@
           <div class="contact-card">
             <div class="label">Office</div>
             <div class="value italic">New York, NY</div>
-            <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.18em;color:var(--muted);margin-top:6px">40.7128° N · 74.0060° W</div>
           </div>
           <div class="contact-card">
             <div class="label">Inquiries</div>

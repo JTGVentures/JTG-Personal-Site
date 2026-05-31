@@ -587,8 +587,6 @@ section.page {
 /* ===== VENTURES — THE COMPANIES (3D card table) ===== */
 .vtable {
   margin: 72px 0 56px;
-  perspective: 2200px;
-  perspective-origin: 50% 22%;
 }
 .vtable-head {
   display: flex;
@@ -621,7 +619,6 @@ section.page {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
-  transform-style: preserve-3d;
 }
 .vtable-card {
   display: flex;
@@ -632,15 +629,12 @@ section.page {
   border-radius: 4px;
   position: relative;
   overflow: hidden;
-  transform: rotateX(14deg) translateZ(0);
-  transform-origin: center 90%;
-  transform-style: preserve-3d;
   box-shadow:
-    0 50px 70px -30px rgba(0, 0, 0, 0.85),
-    0 18px 30px -18px rgba(0, 0, 0, 0.7),
+    0 24px 40px -28px rgba(0, 0, 0, 0.7),
     inset 0 1px 0 rgba(242, 238, 230, 0.06);
-  transition: transform 0.7s var(--ease), box-shadow 0.7s var(--ease), border-color 0.7s var(--ease);
+  transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease), border-color 0.45s var(--ease);
   cursor: pointer;
+  text-decoration: none;
 }
 .vtable-card::after {
   /* table sheen */
@@ -651,11 +645,10 @@ section.page {
   pointer-events: none;
 }
 .vtable-card:hover {
-  transform: rotateX(2deg) translateY(-14px) translateZ(40px);
+  transform: translateY(-8px);
   border-color: rgba(184, 153, 104, 0.5);
   box-shadow:
-    0 80px 110px -36px rgba(0, 0, 0, 0.9),
-    0 30px 50px -20px rgba(0, 0, 0, 0.75),
+    0 40px 60px -30px rgba(0, 0, 0, 0.85),
     inset 0 1px 0 rgba(242, 238, 230, 0.1);
 }
 
@@ -793,7 +786,6 @@ section.page {
   .vintro-title { font-size: 48px; margin-bottom: 40px; }
   .vintro-lead { grid-template-columns: 1fr; gap: 24px; }
   .vtable {
-    perspective: none;
     margin-top: 40px;
   }
   .vtable-head { margin-bottom: 40px; flex-wrap: wrap; }
@@ -1049,6 +1041,16 @@ section.page {
 .contact-submit:hover span { color: var(--ink); }
 .contact-submit.sent { border-color: var(--brass); color: var(--brass); }
 .contact-submit.sent::before { background: transparent; }
+.contact-submit:disabled { opacity: 0.55; cursor: progress; }
+.contact-error {
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  color: #d98b7a;
+  max-width: 440px;
+}
 
 .contact-side {
   display: flex; flex-direction: column; gap: 48px;

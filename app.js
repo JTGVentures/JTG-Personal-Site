@@ -46,21 +46,56 @@
     setInterval(tick, 30000);
   }
 
-  // --- Contact form (client-side acknowledgement) ---
+  // --- Contact form (AJAX submit to Formspree, stays on page) ---
   var form = document.querySelector('.contact-form');
   if (form) {
+    var errorEl = form.querySelector('.contact-error');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('.contact-submit');
-      if (!btn) return;
-      var span = btn.querySelector('span') || btn;
-      btn.classList.add('sent');
-      span.textContent = 'Received · Thank you';
-      setTimeout(function () {
-        btn.classList.remove('sent');
-        span.textContent = 'Send Message';
-        form.reset();
-      }, 4000);
+      var span = btn ? (btn.querySelector('span') || btn) : null;
+      if (errorEl) { errorEl.hidden = true; errorEl.textContent = ''; }
+
+      // Native validation (required fields / email format)
+      if (typeof form.reportValidity === 'function' && !form.reportValidity()) {
+        return;
+      }
+
+      if (btn) btn.disabled = true;
+      if (span) span.textContent = 'Sending…';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          if (btn) { btn.classList.add('sent'); btn.disabled = false; }
+          if (span) span.textContent = 'Received · Thank you';
+          form.reset();
+          setTimeout(function () {
+            if (btn) btn.classList.remove('sent');
+            if (span) span.textContent = 'Send Message';
+          }, 5000);
+        } else {
+          return res.json().then(function (data) {
+            throw new Error(
+              data && data.errors && data.errors.length
+                ? data.errors.map(function (x) { return x.message; }).join(', ')
+                : 'Something went wrong. Please try again.'
+            );
+          });
+        }
+      }).catch(function (err) {
+        if (btn) btn.disabled = false;
+        if (span) span.textContent = 'Send Message';
+        if (errorEl) {
+          errorEl.textContent = (err && err.message)
+            ? err.message + ' — or email info@josephgalifi.com directly.'
+            : 'Could not send. Please email info@josephgalifi.com directly.';
+          errorEl.hidden = false;
+        }
+      });
     });
   }
 })();
