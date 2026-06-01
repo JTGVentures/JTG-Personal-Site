@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Services — Pieroni &amp; Fiorello DDS</title>
+<meta name="description" content="General & cosmetic dentistry, veneers, teeth whitening, Invisalign, implants & All-on-X, root canals, laser dentistry, and same-day emergency care — all in-house on Staten Island." />
+<link rel="canonical" href="https://clovelakedental.com/services.html" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/site.css" />
+
+<style>
+  .page-hero {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(56px, 8vw, 120px) var(--pad-x) clamp(40px, 5vw, 72px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .page-hero .crumb {
+    font-family: var(--sans); font-size: 11.5px; letter-spacing: 0.32em;
+    text-transform: uppercase; color: var(--ink-soft); font-weight: 500;
+    margin-bottom: 24px; display: inline-flex; align-items: center; gap: 12px;
+  }
+  .page-hero .crumb a { color: inherit; text-decoration: none; }
+  .page-hero .crumb a:hover { color: var(--accent); }
+  .page-hero .crumb .sep { width: 18px; height: 1px; background: var(--accent); display: inline-block; }
+  .page-hero h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(48px, 6vw, 88px); line-height: 1.02;
+    letter-spacing: -0.02em; margin: 0 0 24px;
+    max-width: 18ch; text-wrap: balance;
+  }
+  .page-hero h1 em { color: var(--accent); font-style: italic; }
+  .page-hero .intro {
+    font-family: var(--serif); font-style: italic;
+    font-size: clamp(18px, 1.5vw, 22px); line-height: 1.5;
+    color: var(--ink-2); max-width: 58ch; margin: 0;
+  }
+
+  .services-index {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(48px, 6vw, 88px) var(--pad-x);
+  }
+
+  /* Section header */
+  .services-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: clamp(36px, 4.5vw, 64px);
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--hairline);
+    flex-wrap: wrap;
+  }
+  .services-section-head .label {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .services-section-head h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(34px, 4.4vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0;
+    max-width: 18ch;
+  }
+  .services-section-head h2 em { color: var(--accent); font-style: italic; }
+  .services-section-head .count-meta {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-soft);
+  }
+  .services-section-head .count-meta b {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-style: normal;
+    color: var(--accent);
+    margin-right: 8px;
+    font-size: 22px;
+  }
+
+  /* ===== Card grid ===== */
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(18px, 2vw, 28px);
+  }
+  @media (max-width: 960px) {
+    .service-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .service-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== Service card ===== */
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    background: #FBF7EC;
+    border: 1px solid var(--hairline);
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(.2,.7,.2,1),
+                box-shadow 0.3s, border-color 0.3s;
+  }
+  /* paper-grain overlay */
+  .service-card::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.14 0 0 0 0 0.2 0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/></svg>");
+    opacity: 0.18;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .service-card > * { position: relative; z-index: 1; }
+  .service-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 18px 40px -28px rgba(26,36,51,0.35);
+  }
+  .service-card:hover .card-visual { background: var(--accent); color: var(--bg); }
+  .service-card:hover .card-visual .number { color: rgba(244,237,223,0.6); }
+  .service-card:hover .card-action { color: var(--accent); }
+  .service-card:hover .card-action .arrow { width: 30px; }
+
+  /* Top visual band */
+  .card-visual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px clamp(22px, 2.6vw, 32px);
+    background: color-mix(in srgb, var(--bg-sub) 80%, transparent);
+    color: var(--accent);
+    border-bottom: 1px solid var(--hairline);
+    transition: background 0.3s, color 0.3s;
+  }
+  .card-visual .icon {
+    width: 44px; height: 44px;
+    flex: none;
+  }
+  .card-visual .icon svg {
+    width: 100%; height: 100%;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .card-visual .number {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+    transition: color 0.3s;
+  }
+
+  /* Body */
+  .card-body {
+    padding: clamp(24px, 2.6vw, 32px) clamp(22px, 2.6vw, 32px) 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body h3 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(22px, 2.4vw, 30px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+  .card-body h3 em { color: var(--accent); font-style: italic; }
+  .card-tagline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0 0 20px;
+    text-wrap: pretty;
+  }
+  .card-points {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card-points li {
+    font-family: var(--sans);
+    font-size: 13.5px;
+    line-height: 1.45;
+    color: var(--ink-2);
+    padding-left: 18px;
+    position: relative;
+  }
+  .card-points li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 8px;
+    width: 5px; height: 5px;
+    background: var(--accent);
+    transform: rotate(45deg);
+  }
+
+  /* Foot */
+  .card-foot {
+    margin-top: auto;
+    padding: 16px clamp(22px, 2.6vw, 32px) 20px;
+    border-top: 1px solid var(--hairline);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .card-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ink);
+    transition: color 0.3s;
+  }
+  .card-action .arrow {
+    display: inline-block; width: 18px; height: 1px;
+    background: currentColor; position: relative;
+    transition: width 0.3s;
+  }
+  .card-action .arrow::after {
+    content: ""; position: absolute; right: -1px; top: -3px;
+    width: 7px; height: 7px;
+    border-top: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+    transform: rotate(45deg);
+  }
+  .card-badge {
+    font-family: var(--sans);
+    font-size: 9.5px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+    padding: 5px 9px;
+    font-weight: 600;
+    flex: none;
+  }
+
+  /* Emergency card — full-width, dark, distinct */
+  .service-card.urgent {
+    grid-column: 1 / -1;
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+  }
+  .service-card.urgent::before {
+    opacity: 0.28;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.85 0 0 0 0 0.72 0 0 0 0 0.45 0 0 0 0.4 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>");
+    mix-blend-mode: overlay;
+  }
+  .service-card.urgent:hover {
+    transform: none;
+    border-color: var(--accent);
+    box-shadow: none;
+  }
+  .service-card.urgent .card-visual {
+    flex: none;
+    width: 140px;
+    flex-direction: column;
+    background: rgba(168,123,63,0.18);
+    border-bottom: none;
+    border-right: 1px solid rgba(168,123,63,0.35);
+    color: var(--accent);
+    gap: 12px;
+    padding: 28px 20px;
+  }
+  .service-card.urgent:hover .card-visual {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .service-card.urgent:hover .card-visual .number {
+    color: rgba(244,237,223,0.7);
+  }
+  .service-card.urgent .card-visual .icon { width: 52px; height: 52px; }
+  .service-card.urgent .card-visual .number {
+    color: color-mix(in srgb, var(--bg) 50%, transparent);
+    font-size: 24px;
+  }
+  .service-card.urgent .card-body {
+    flex: 1;
+    padding: clamp(28px, 3vw, 40px);
+    justify-content: center;
+  }
+  .service-card.urgent .card-body h3 {
+    color: var(--bg);
+    font-size: clamp(26px, 2.8vw, 36px);
+  }
+  .service-card.urgent .card-body h3 em { color: var(--accent); }
+  .service-card.urgent .card-tagline {
+    color: color-mix(in srgb, var(--bg) 75%, transparent);
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+  .service-card.urgent .card-points {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    margin-bottom: 22px;
+  }
+  .service-card.urgent .card-points li {
+    color: color-mix(in srgb, var(--bg) 75%, transparent);
+    font-size: 13px;
+  }
+  .service-card.urgent .urgent-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(168,123,63,0.35);
+  }
+  .service-card.urgent .urgent-cta .phone {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(28px, 3.2vw, 40px);
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    line-height: 1;
+  }
+  .service-card.urgent:hover .urgent-cta .phone { color: var(--bg); }
+  .service-card.urgent .urgent-cta .phone-sub {
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--bg) 65%, transparent);
+    font-weight: 600;
+  }
+  @media (max-width: 780px) {
+    .service-card.urgent {
+      flex-direction: column;
+    }
+    .service-card.urgent .card-visual {
+      width: auto;
+      flex-direction: row;
+      border-right: none;
+      border-bottom: 1px solid rgba(168,123,63,0.35);
+    }
+  }
+
+  /* footer CTA */
+  .services-cta {
+    background: var(--ink);
+    color: var(--bg);
+    padding: clamp(56px, 7vw, 96px) var(--pad-x);
+    margin-top: clamp(40px, 5vw, 72px);
+  }
+  .services-cta-inner {
+    max-width: var(--maxw); margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(32px, 4vw, 64px);
+    align-items: center;
+  }
+  .services-cta h2 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(36px, 4.4vw, 60px); line-height: 1.1;
+    letter-spacing: -0.015em; margin: 0; max-width: 16ch;
+    color: var(--bg);
+  }
+  .services-cta h2 em { color: var(--accent); font-style: italic; }
+  .services-cta .cta-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  @media (max-width: 760px) {
+    .services-cta-inner { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body data-palette="warmcream" data-serif="cormorant" data-sans="manrope" data-ornaments="on">
+
+<div class="topstrip">
+  <div class="topstrip-inner">
+    <div><span class="dot"></span>Accepting new patients — same-day emergency appointments available</div>
+    <div class="meta">
+      <a href="visit.html">Mon · Tue 11–8 &middot; Wed 9–2 &middot; Thu 8–5</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=763+Clove+Road+Staten+Island+NY+10310" target="_blank" rel="noopener noreferrer">763 Clove Rd, Staten Island, NY</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="brandmark" href="index.html">
+      <div class="mk">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M11 9c-3 0-5 2.5-5 6 0 3 1.2 5.5 2 8.5.7 2.6.8 6 2.5 9 1 1.7 2.5 2.5 3.5 1.2 1-1.3 1-3.7 1.5-5.5.4-1.7 1-3.2 2-3.2s1.6 1.5 2 3.2c.5 1.8.5 4.2 1.5 5.5s2.5.5 3.5-1.2c1.7-3 1.8-6.4 2.5-9 .8-3 2-5.5 2-8.5 0-3.5-2-6-5-6-2 0-3.5 1.2-6.5 1.2S13 9 11 9z" stroke="var(--accent)" stroke-width="1.6"/>
+          <path d="M18 18c0 1.5-.5 3-1 4" stroke="var(--ink)" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="wordmark">
+        <span>Pieroni &amp; Fiorello</span>
+        <small>DDS · Staten Island · Est. 1982</small>
+      </div>
+    </a>
+    <nav class="primary" aria-label="Primary">
+      <a href="practice.html">Our Practice</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="doctors.html">Doctors</a>
+    </nav>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:+17184425319">718-442-5319</a>
+      <a class="btn btn-primary" href="visit.html">Book a Visit <span class="arrow"></span></a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero" aria-label="Services">
+  <div class="crumb"><a href="index.html">Home</a><span class="sep"></span>Services</div>
+  <h1>Dentistry done at <em>the highest level.</em></h1>
+  <p class="intro">
+    The services we offer reflect decades of experience, ongoing training, and a
+    commitment to delivering work that stands the test of time. From everyday
+    preventive care to complex implant and cosmetic cases, every procedure is
+    performed with the same standard: take the time to do it right, use the right
+    tools, and treat every patient like the work matters, because it does.
+  </p>
+</section>
+
+<div class="services-index">
+
+  <div class="services-section-head">
+    <div>
+      <div class="label">Services We Offer</div>
+      <h2>Everything we do, <em>under one roof.</em></h2>
+    </div>
+    <div class="count-meta">
+      <b>9</b>services &middot; all performed in-house
+    </div>
+  </div>
+
+  <div class="service-grid">
+
+    <!-- 01 General Dentistry -->
+    <a class="service-card" id="general" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M14 11c-2 0-3.5 1.6-3.5 4.5 0 2 .8 4 1.4 6 .5 1.9.6 4.5 1.8 6.6 1 1.5 2 1.4 2.7.2.7-1.2.7-3.3 1-4.7.4-1.6.9-2.6 1.7-2.6.8 0 1.3 1 1.7 2.6.3 1.4.3 3.5 1 4.7.7 1.2 1.7 1.3 2.7-.2 1.2-2.1 1.3-4.7 1.8-6.6.6-2 1.4-4 1.4-6 0-2.9-1.5-4.5-3.5-4.5-1.5 0-2.5 1-4.6 1S15.5 11 14 11z"/></svg>
+        </span>
+        <span class="number">01</span>
+      </div>
+      <div class="card-body">
+        <h3>General <em>Dentistry</em></h3>
+        <ul class="card-points">
+          <li>Cleanings &amp; comprehensive exams</li>
+          <li>Digital imaging &amp; intraoral scans</li>
+          <li>Fillings &amp; preventive care</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Book a Visit <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 02 Cosmetic Dentistry -->
+    <a class="service-card" id="cosmetic" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M12 22c0 5.5 4.5 10 10 10s10-4.5 10-10"/><path d="M14 22h16"/><path d="M18 18l1.5-3M22 17V14M26 18l-1.5-3"/></svg>
+        </span>
+        <span class="number">02</span>
+      </div>
+      <div class="card-body">
+        <h3>Cosmetic <em>Dentistry</em></h3>
+        <ul class="card-points">
+          <li>Bonding &amp; subtle contouring</li>
+          <li>Custom shade matching</li>
+          <li>Tailored to your face, not a template</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Ask About It <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 03 Veneers -->
+    <a class="service-card" id="veneers" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><rect x="14" y="14" width="16" height="20" rx="2"/><path d="M14 20h16M14 26h16"/><path d="M18 10h8"/></svg>
+        </span>
+        <span class="number">03</span>
+      </div>
+      <div class="card-body">
+        <h3><em>Veneers</em></h3>
+        <ul class="card-points">
+          <li>Conservative prep technique</li>
+          <li>Custom porcelain shade &amp; shape</li>
+          <li>Designed and seated in-office</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Book a Consult <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 04 Teeth Whitening -->
+    <a class="service-card" id="whitening" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M22 8v8M22 28v8M8 22h8M28 22h8"/><path d="M14 14l4 4M30 30l-4-4M14 30l4-4M30 14l-4 4"/></svg>
+        </span>
+        <span class="number">04</span>
+      </div>
+      <div class="card-body">
+        <h3>Teeth <em>Whitening</em></h3>
+        <ul class="card-points">
+          <li>In-office &amp; take-home options</li>
+          <li>Calibrated to reduce sensitivity</li>
+          <li>Visible results, often in one visit</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Brighten Your Smile <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 05 Invisalign -->
+    <a class="service-card" id="invisalign" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M10 18c0-4 4-8 12-8s12 4 12 8c0 6-3 14-5 16-2 1.5-3-2-3-4-1-2-2-3-4-3s-3 1-4 3c0 2-1 5.5-3 4-2-2-5-10-5-16z"/></svg>
+        </span>
+        <span class="number">05</span>
+      </div>
+      <div class="card-body">
+        <h3><em>Invisalign</em></h3>
+        <ul class="card-points">
+          <li>Same doctor through the entire plan</li>
+          <li>Treatment progress reviewed in person</li>
+          <li>Custom 3D-printed retainers at finish</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Start a Plan <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 06 Implants & All-on-X -->
+    <a class="service-card" id="implants" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M16 10h12l-2 8h-8z"/><path d="M18 18h8v3h-8zM18 23h8v3h-8zM18 28h8v3h-8z"/><path d="M20 31l2 4 2-4"/></svg>
+        </span>
+        <span class="number">06</span>
+      </div>
+      <div class="card-body">
+        <h3>Implants &amp; <em>All-on-X</em></h3>
+        <ul class="card-points">
+          <li>Performed in-house by the doctors</li>
+          <li>3D-planned for accuracy</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Schedule a Consult <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 07 Root Canals -->
+    <a class="service-card" id="root-canals" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M16 10c-3 0-5 2.5-5 5.5 0 2.5 1 4.5 2 6.5 1 2 1.5 5 2.5 8 1 2.5 2 3 2.5 1 .5-2 .5-5 1.5-5s1 3 1.5 5c.5 2 1.5 1.5 2.5-1 1-3 1.5-6 2.5-8 1-2 2-4 2-6.5 0-3-2-5.5-5-5.5-2 0-3 1-4 1s-2-1-3-1z"/></svg>
+        </span>
+        <span class="number">07</span>
+      </div>
+      <div class="card-body">
+        <h3>Root <em>Canals</em></h3>
+        <ul class="card-points">
+          <li>Modern, comfortable technique</li>
+          <li>Performed in-office + referrals to trusted specialists</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Get Relief <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 08 Laser Dentistry -->
+    <a class="service-card" id="laser" href="visit.html">
+      <div class="card-visual">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M10 22h24"/><circle cx="22" cy="22" r="3" fill="currentColor"/><path d="M14 16l2 2M28 28l2 2M14 28l2-2M28 16l2-2"/></svg>
+        </span>
+        <span class="number">08</span>
+      </div>
+      <div class="card-body">
+        <h3>Laser <em>Dentistry</em></h3>
+        <ul class="card-points">
+          <li>Soft-tissue laser procedures</li>
+          <li>Gum recontouring &amp; periodontal care</li>
+          <li>Less bleeding, faster recovery</li>
+        </ul>
+      </div>
+      <div class="card-foot">
+        <span class="card-action">Learn More <span class="arrow"></span></span>
+      </div>
+    </a>
+
+    <!-- 09 Emergency Services — full-width, distinct -->
+    <a class="service-card urgent" id="emergency" href="tel:+17184425319">
+      <div class="card-body">
+        <h3>Emergency <em>Services</em></h3>
+        <ul class="card-points">
+          <li>Pain &amp; toothache</li>
+          <li>Breaks, chips, knock-outs</li>
+          <li>Infections &amp; swelling</li>
+          <li>After-hours phone access</li>
+        </ul>
+        <div class="urgent-cta">
+          <span class="phone">718-442-5319</span>
+          <span class="phone-sub">Call now &middot; Same-day appointments</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+
+<section class="services-cta">
+  <div class="services-cta-inner">
+    <h2>Not sure where to start? <em>Just call.</em></h2>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="visit.html">Book a Visit <span class="arrow"></span></a>
+      <a class="btn btn-on-dark" href="tel:+17184425319">718-442-5319</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="name">Pieroni &amp; Fiorello<br/>D.D.S.</div>
+      <div class="since">— Serving Staten Island since 1982 —</div>
+      <p>An independent, doctor-owned general dental practice on the North Shore. Quality, unhurried care for families across generations.</p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=763+Clove+Road+Staten+Island+NY+10310" target="_blank" rel="noopener noreferrer">763 Clove Road<br/>Staten Island, NY 10310</a></li>
+        <li><a href="tel:+17184425319">718-442-5319</a></li>
+        <li><a href="visit.html#book">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Mon – Tue · 11–8</li>
+        <li>Wednesday · 9–2</li>
+        <li>Thursday · 8–5</li>
+        <li>Friday · Closed</li>
+        <li>Saturday · Hours varied</li>
+        <li>Sunday · Closed</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Practice</h4>
+      <ul>
+        <li><a href="practice.html">Our Practice</a></li>
+        <li><a href="doctors.html">Doctors &amp; Team</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Pieroni &amp; Fiorello D.D.S. — All rights reserved.</span>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="accessibility.html">Accessibility</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>

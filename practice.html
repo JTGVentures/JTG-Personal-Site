@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Our Practice — Pieroni &amp; Fiorello DDS</title>
+<meta name="description" content="A doctor-owned, independent dental practice on Staten Island's North Shore for 40+ years — unhurried, personal care in a calm, state-of-the-art office." />
+<link rel="canonical" href="https://clovelakedental.com/practice.html" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/site.css" />
+
+<template id="__bundler_thumbnail" data-bg-color="#F4EDDF">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#F4EDDF"/>
+    <g transform="translate(600 400)">
+      <circle r="180" fill="none" stroke="#A87B3F" stroke-width="3"/>
+      <circle r="150" fill="none" stroke="#D9CFB6" stroke-width="1.5"/>
+      <text x="0" y="20" text-anchor="middle"
+            font-family="Cormorant Garamond, Georgia, serif"
+            font-size="120" font-weight="600" fill="#A87B3F">P&amp;F</text>
+      <text x="0" y="90" text-anchor="middle"
+            font-family="Manrope, system-ui, sans-serif"
+            font-size="22" font-weight="600" letter-spacing="8" fill="#1A2433">EST. 1982</text>
+    </g>
+  </svg>
+</template>
+
+<style>
+  /* page-specific tweaks */
+  .page-hero {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: clamp(36px, 4vw, 64px) var(--pad-x);
+    border-bottom: 1px solid var(--hairline);
+    display: block;
+  }
+  .page-hero-photo {
+    width: clamp(140px, 16vw, 200px);
+    aspect-ratio: 4 / 3;
+    position: relative;
+    overflow: hidden;
+    flex: none;
+  }
+  .page-hero-photo .img-placeholder {
+    width: 100%; height: 100%;
+    aspect-ratio: auto;
+    padding: 14px;
+    font-size: 11px;
+  }
+  .page-hero-photo .img-placeholder::before {
+    width: 18px; height: 18px; top: 14px; left: 14px;
+  }
+  .page-hero-photo .img-placeholder .frame-label {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  .page-hero-text { display: flex; flex-direction: column; gap: 8px; }
+  .page-hero .crumb {
+    font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.32em;
+    text-transform: uppercase; color: var(--ink-soft); font-weight: 500;
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .page-hero .crumb a { color: inherit; text-decoration: none; }
+  .page-hero .crumb a:hover { color: var(--accent); }
+  .page-hero .crumb .sep { width: 14px; height: 1px; background: var(--accent); display: inline-block; }
+  .page-hero h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(32px, 3.6vw, 52px); line-height: 1.05;
+    letter-spacing: -0.015em; margin: 4px 0 4px;
+    max-width: 22ch; text-wrap: balance;
+  }
+  .page-hero h1 em { color: var(--accent); font-style: italic; }
+  .page-hero .intro {
+    font-family: var(--serif); font-style: italic;
+    font-size: clamp(14.5px, 1.1vw, 17px); line-height: 1.45;
+    color: var(--ink-soft); max-width: 70ch; margin: 0;
+  }
+
+  @media (max-width: 700px) {
+    .page-hero { grid-template-columns: 1fr; gap: 18px; }
+    .page-hero-photo { width: 100%; aspect-ratio: 16 / 7; }
+  }
+
+  /* ---------- THE OFFICE ---------- */
+  .office-section {
+    max-width: var(--maxw); margin: 0 auto;
+    padding: clamp(64px, 8vw, 120px) var(--pad-x) clamp(40px, 6vw, 80px);
+  }
+  .office-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: clamp(40px, 5vw, 80px);
+    align-items: flex-start;
+  }
+  .office-copy .label {
+    display: inline-flex; align-items: center;
+    font-family: var(--sans);
+    font-size: 11px; letter-spacing: 0.32em;
+    text-transform: uppercase; color: var(--accent-deep);
+    font-weight: 600;
+  }
+  .office-copy h2 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(36px, 4.4vw, 60px); line-height: 1.05;
+    letter-spacing: -0.02em; margin: 16px 0 22px;
+    text-wrap: balance; max-width: 16ch;
+  }
+  .office-copy h2 em { color: var(--accent); font-style: italic; }
+  .office-copy p {
+    font-size: 16.5px; line-height: 1.7;
+    color: var(--ink-2); margin: 0 0 24px; max-width: 50ch;
+  }
+  .office-copy p strong { color: var(--ink); font-weight: 600; }
+  .office-bullets {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 14px;
+    border-top: 1px solid var(--hairline);
+    padding-top: 22px;
+  }
+  .office-bullets li {
+    font-size: 14.5px; line-height: 1.55;
+    color: var(--ink-soft); padding-left: 18px; position: relative;
+  }
+  .office-bullets li::before {
+    content: ""; position: absolute; left: 0; top: 9px;
+    width: 6px; height: 6px; background: var(--accent);
+    transform: rotate(45deg);
+  }
+  .office-bullets li span {
+    color: var(--ink); font-family: var(--serif);
+    font-weight: 500; font-size: 16px;
+  }
+  .office-stack { display: flex; flex-direction: column; gap: clamp(16px, 2vw, 28px); }
+  .office-stack .img-placeholder.tall { aspect-ratio: 16 / 11; }
+  /* real photo in the frame — strip the empty-placeholder decoration
+     (diagonal stripes, border, 24px padding, and the rotated diamond)
+     so the image sits flush with no padding or graphic around it */
+  .office-hero-photo {
+    overflow: hidden;
+    background: var(--bg-sub);
+    padding: 0;
+    border: 0;
+  }
+  .office-hero-photo::before { display: none; }
+  .office-hero-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .office-stack-row {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: clamp(16px, 2vw, 28px);
+  }
+  .office-stack-row .img-placeholder { aspect-ratio: 4 / 5; }
+
+  /* ---------- MISSION ---------- */
+  .mission-section {
+    background: var(--bg-sub);
+    padding: clamp(72px, 9vw, 140px) var(--pad-x);
+    margin: clamp(48px, 6vw, 80px) auto 0;
+  }
+  .mission-inner {
+    max-width: 920px; margin: 0 auto; text-align: center;
+  }
+  .mission-section .label {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 11px; letter-spacing: 0.32em;
+    text-transform: uppercase; color: var(--accent-deep);
+    font-weight: 600; margin-bottom: 26px;
+  }
+  .mission-quote {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(36px, 5vw, 64px); line-height: 1.15;
+    letter-spacing: -0.015em; color: var(--ink);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .mission-quote em { color: var(--accent); font-style: italic; }
+  .mission-body {
+    font-family: var(--serif); font-style: italic;
+    font-size: clamp(17px, 1.4vw, 21px); line-height: 1.6;
+    color: var(--ink-2); margin: 0 auto; max-width: 56ch;
+  }
+
+  @media (max-width: 900px) {
+    .office-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body data-palette="warmcream" data-serif="cormorant" data-sans="manrope" data-ornaments="on">
+
+<!-- ============ TOP STRIP ============ -->
+<div class="topstrip">
+  <div class="topstrip-inner">
+    <div><span class="dot"></span>Accepting new patients — same-day emergency appointments available</div>
+    <div class="meta">
+      <a href="visit.html">Mon · Tue 11–8 &middot; Wed 9–2 &middot; Thu 8–5</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=763+Clove+Road+Staten+Island+NY+10310" target="_blank" rel="noopener noreferrer">763 Clove Rd, Staten Island, NY</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="header-inner">
+    <a class="brandmark" href="index.html">
+      <div class="mk">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M11 9c-3 0-5 2.5-5 6 0 3 1.2 5.5 2 8.5.7 2.6.8 6 2.5 9 1 1.7 2.5 2.5 3.5 1.2 1-1.3 1-3.7 1.5-5.5.4-1.7 1-3.2 2-3.2s1.6 1.5 2 3.2c.5 1.8.5 4.2 1.5 5.5s2.5.5 3.5-1.2c1.7-3 1.8-6.4 2.5-9 .8-3 2-5.5 2-8.5 0-3.5-2-6-5-6-2 0-3.5 1.2-6.5 1.2S13 9 11 9z" stroke="var(--accent)" stroke-width="1.6"/>
+          <path d="M18 18c0 1.5-.5 3-1 4" stroke="var(--ink)" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="wordmark">
+        <span>Pieroni &amp; Fiorello</span>
+        <small>DDS · Staten Island · Est. 1982</small>
+      </div>
+    </a>
+    <nav class="primary" aria-label="Primary">
+      <a href="practice.html" aria-current="page">Our Practice</a>
+      <a href="services.html">Services</a>
+      <a href="doctors.html">Doctors</a>
+    </nav>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:+17184425319">718-442-5319</a>
+      <a class="btn btn-primary" href="visit.html">Book a Visit <span class="arrow"></span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero" aria-label="Our Practice">
+  <div class="page-hero-text">
+    <div class="crumb"><a href="index.html">Home</a><span class="sep"></span>Our Practice</div>
+    <h1>An independent practice, <em>built around you.</em></h1>
+    <p class="intro">
+      Being doctor-owned means we answer to one person: the patient sitting in the chair.
+      There's no corporate playbook, no production targets, no shortcuts. Just two doctors
+      and a team that's been carefully built, working at a pace that lets us actually
+      listen, plan thoughtfully, and deliver the kind of care we'd want for our own families.
+    </p>
+  </div>
+</section>
+
+<!-- ============ THE OFFICE ============ -->
+<section class="office-section" id="office" aria-label="The Office">
+  <div class="office-grid">
+    <div class="office-copy">
+      <div class="label">The Office</div>
+      <h2>Refined, calm, <em>state-of-the-art.</em></h2>
+      <p>
+        Every detail of our office has been considered, from the warmth of the
+        waiting room to the precision of the tools in each operatory. We believe
+        the environment you're treated in matters as much as the treatment
+        itself, which is why we've invested just as much in comfort and calm as
+        we have in the technology behind every procedure. It's modern dentistry,
+        delivered in a space that actually feels good to be in.
+      </p>
+      <ul class="office-bullets">
+        <li><span>Modern operatories</span> outfitted for general, cosmetic, and surgical procedures</li>
+        <li><span>Digital imaging &amp; intraoral scanning</span> for accurate, low-radiation diagnostics</li>
+        <li><span>Implant &amp; laser dentistry</span> performed in-house by the doctors</li>
+        <li><span>Same-day emergency</span> appointments held open every week</li>
+      </ul>
+    </div>
+    <div class="office-stack">
+      <div class="img-placeholder tall office-hero-photo">
+        <img src="assets/office-exterior.jpg" alt="The Pieroni &amp; Fiorello office — a brick colonial home on Clove Road with a blue front door" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section class="mission-section" id="mission" aria-label="Mission">
+  <div class="mission-inner">
+    <div class="label">Our Mission</div>
+    <p class="mission-quote">
+      Built around the people <em>we care for.</em>
+    </p>
+    <p class="mission-body">
+      Our mission is simple: provide exceptional dentistry, build lasting
+      relationships, and stand alongside the community that's stood with us for
+      over forty years. Every patient who walks through our doors deserves time,
+      attention, and care delivered at the highest standard. That's the work we
+      set out to do every day, and the standard we hold ourselves to with every
+      visit, every treatment, and every family we have the privilege of serving.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="name">Pieroni &amp; Fiorello<br/>D.D.S.</div>
+      <div class="since">— Serving Staten Island since 1982 —</div>
+      <p>An independent, doctor-owned general dental practice on the North Shore. Quality, unhurried care for families across generations.</p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=763+Clove+Road+Staten+Island+NY+10310" target="_blank" rel="noopener noreferrer">763 Clove Road<br/>Staten Island, NY 10310</a></li>
+        <li><a href="tel:+17184425319">718-442-5319</a></li>
+        <li><a href="visit.html#book">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Mon – Tue · 11–8</li>
+        <li>Wednesday · 9–2</li>
+        <li>Thursday · 8–5</li>
+        <li>Friday · Closed</li>
+        <li>Saturday · Hours varied</li>
+        <li>Sunday · Closed</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Practice</h4>
+      <ul>
+        <li><a href="practice.html">Our Practice</a></li>
+        <li><a href="doctors.html">Doctors &amp; Team</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Pieroni &amp; Fiorello D.D.S. — All rights reserved.</span>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="accessibility.html">Accessibility</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>
