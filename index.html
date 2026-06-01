@@ -1,365 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Pieroni & Fiorello DDS — Staten Island Family Dentistry</title>
-<meta name="description" content="Pieroni & Fiorello D.D.S. — an independent, doctor-owned family dental practice on Clove Road, Staten Island since 1982. General, cosmetic, implants, Invisalign & emergency care." />
-<link rel="canonical" href="https://clovelakedental.com/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph T. Galifi — Founder · Operator · Innovator</title>
+  <meta name="description" content="The personal site of Joseph T. Galifi — New York-born businessman, founder, and operator building across business development, technology, real estate, and acquisitions.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/site.css" />
+  <link rel="stylesheet" href="styles.css?v=31">
 </head>
-<body data-palette="warmcream" data-serif="cormorant" data-sans="manrope" data-ornaments="on">
-
-<!-- ============ TOP STRIP ============ -->
-<div class="topstrip">
-  <div class="topstrip-inner">
-    <div><span class="dot"></span>Accepting new patients — same-day emergency appointments available</div>
-    <div class="meta">
-      <a href="visit.html">Mon · Tue 11–8 &middot; Wed 9–2 &middot; Thu 8–5</a>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=763+Clove+Road+Staten+Island+NY+10310" target="_blank" rel="noopener noreferrer">763 Clove Rd, Staten Island, NY</a>
+<body>
+  <nav class="nav">
+    <a class="nav-mark" href="index.html">Joseph T. <span>Galifi</span></a>
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Ventures</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </div>
-</div>
+  </nav>
 
-<!-- ============ HEADER ============ -->
-<header class="site">
-  <div class="header-inner">
-    <a class="brandmark" href="index.html">
-      <div class="mk">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M11 9c-3 0-5 2.5-5 6 0 3 1.2 5.5 2 8.5.7 2.6.8 6 2.5 9 1 1.7 2.5 2.5 3.5 1.2 1-1.3 1-3.7 1.5-5.5.4-1.7 1-3.2 2-3.2s1.6 1.5 2 3.2c.5 1.8.5 4.2 1.5 5.5s2.5.5 3.5-1.2c1.7-3 1.8-6.4 2.5-9 .8-3 2-5.5 2-8.5 0-3.5-2-6-5-6-2 0-3.5 1.2-6.5 1.2S13 9 11 9z" stroke="var(--accent)" stroke-width="1.6"/>
-          <path d="M18 18c0 1.5-.5 3-1 4" stroke="var(--ink)" stroke-width="1.2" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="wordmark">
-        <span>Pieroni &amp; Fiorello</span>
-        <small>DDS · Staten Island · Est. 1982</small>
-      </div>
-    </a>
-    <nav class="primary" aria-label="Primary">
-      <a href="practice.html">Our Practice</a>
-      <a href="services.html">Services</a>
-      <a href="doctors.html">Doctors</a>
-    </nav>
-    <div class="header-cta">
-      <a class="phone-link" href="tel:+17184425319">718-442-5319</a>
-      <a class="btn btn-primary" href="visit.html">Book a Visit <span class="arrow"></span></a>
-    </div>
-  </div>
-</header>
+  <main class="page-wrap page-home">
+    <section class="hero" id="home" data-screen-label="01 Home">
+      <div class="hero-gradient"></div>
+      <div class="hero-grain"></div>
 
-<!-- ============ SECTION 1 — HERO ============ -->
-<section class="hero" id="hero" aria-label="Welcome">
-  <div class="hero-eyebrow">
-    <div>Doctor-Owned · Family Practice · North Shore</div>
-    <div class="est"><i>Established</i> <b>1982</b></div>
-    <div>40+ Years of Trusted Care</div>
-  </div>
-
-  <div class="hero-top">
-
-    <!-- LEFT: looping office video — self-hosted H.264 MP4, standard HTML5 tag -->
-    <figure class="hero-video" aria-label="Office reel">
-      <video
-        src="assets/hero.mp4"
-        poster="assets/hero-poster.jpg"
-        autoplay muted loop playsinline preload="auto"
-        aria-label="A look inside the Pieroni &amp; Fiorello office">
-      </video>
-      <figcaption class="corner-mark" hidden></figcaption>
-    </figure>
-
-    <!-- RIGHT: logo card + primary CTA — split into two equal stacked subsections -->
-    <div class="hero-logo split">
-      <!-- TOP HALF: badge + logo + doctor credentials -->
-      <div class="hero-logo-top">
-        <span class="badge">100% Doctor Owned · 100% Personalized Care</span>
-
-        <div class="logo-wrap">
-          <img class="logo-paper" src="assets/logo-ink-gold.png" alt="Pieroni &amp; Fiorello DDS" />
-          <img class="logo-onvideo" src="assets/logo-cream-gold.png" alt="" aria-hidden="true" />
+      <div class="hero-left reveal in">
+        <div class="hero-eyebrow reveal reveal-fast in">
+          <span class="line"></span>
+          <span class="eyebrow">A Portrait of an Operator · Est. New York</span>
         </div>
 
-        <div class="credentials">
-          <span>Dr. Bryan D. Pieroni, D.D.S.</span>
-          <span class="sep"></span>
-          <span>Dr. Mark Fiorello, D.D.S.</span>
-        </div>
-      </div>
-
-      <!-- BOTTOM HALF: CTAs -->
-      <div class="hero-logo-bottom">
-        <div class="cta-row">
-          <a class="btn btn-primary" href="visit.html">Book a Visit <span class="arrow"></span></a>
-          <a class="btn btn-on-dark" href="tel:+17184425319">Call 718-442-5319</a>
-          <div class="note">Same-day emergency appointments available</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- BOTTOM: cohesive welcome row -->
-  <div class="hero-bottom">
-    <div class="grid">
-      <div>
-        <div class="hero-eyebrow-sub">A welcome from our family</div>
-        <h1 class="hero-headline">
-          Care that still feels <em>personal.</em>
+        <h1 class="hero-name">
+          <span class="stack">Joseph</span>
+          <span class="stack"><span class="italic">T.</span> Galifi</span>
         </h1>
-      </div>
-      <div>
-        <p class="hero-body">
-          <span class="lift">At</span> Pieroni &amp; Fiorello DDS, you'll find something that's getting harder to come by — <strong>a doctor-owned practice where the same familiar faces greet you every visit</strong>, and your dentist actually knows you by name. Drs. Bryan Pieroni and Mark Fiorello lead a team committed to quality, unhurried care that Staten Island families trust. No corporate chains, no rotating providers — just a welcoming practice that feels less like a waiting room and more like home.
+
+        <div class="hero-rule reveal reveal-slow reveal-d3 in"></div>
+
+        <p class="hero-tagline reveal reveal-d3 in">
+          Founder<span class="sep">·</span>Operator<span class="sep">·</span>Innovator
         </p>
-        <div class="hero-cta-row">
-          <a class="btn btn-ghost" href="doctors.html">Meet Our Doctors <span class="arrow"></span></a>
+
+        <div class="hero-roles reveal reveal-d4 in">
+          <span>Business Development</span>
+          <span>Emerging Tech</span>
+          <span>Real Estate</span>
+          <span>Partnerships</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ============ TRUST STRIP + SECTIONS 2–6 (CHARCOAL ZONE) ============ -->
-<div class="dark-zone" data-palette="charcoal">
+      <div class="hero-right reveal reveal-slow reveal-d2 in">
+        <div class="portrait-frame">
+          <img src="assets/joseph-hero.png" alt="Joseph T. Galifi" class="portrait-image">
+        </div>
+      </div>
 
-<!-- ============ TRUST STRIP ============ -->
-<div class="trust-strip" aria-label="At a glance">
-  <div class="trust-item">
-    <div class="ico">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
-    </div>
-    <div class="lab">Doctor-Owned<b>Personalized care.</b></div>
-  </div>
-  <div class="trust-item">
-    <div class="ico">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-    </div>
-    <div class="lab">Emergency Care<b>Same-day visits.</b></div>
-  </div>
-  <div class="trust-item">
-    <div class="ico">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-7h6v7"/></svg>
-    </div>
-    <div class="lab">Staten Island, NY<b>Clove Road since '82.</b></div>
-  </div>
-  <div class="trust-item">
-    <div class="ico">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
-    </div>
-    <div class="lab">Full Service<b>General · Cosmetic · Implants.</b></div>
-  </div>
-</div>
+      <div class="hero-meta">
+        <span><span class="dot"></span>Available · 2026</span>
+        <span id="nyc-clock">NYC · --:-- ET</span>
+      </div>
 
-<!-- ============================================================
-     SECTION 2 — MEET OUR TEAM (HOMEPAGE TEASER → doctors.html)
-     ============================================================ -->
-<section class="scaffold doctors-teaser" id="about" aria-label="Team">
-  <div class="label"><span class="num">02</span>Meet Our Team</div>
+      <div class="hero-scroll">
+        <div>Scroll</div>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
 
-  <div class="teaser-row">
-    <div class="teaser-copy">
-      <h2>Two doctors. <em>One neighborhood family.</em></h2>
-      <p class="summary">
-        Drs. Bryan Pieroni and Mark Fiorello &mdash; both Staten Island born and raised &mdash;
-        lead the practice together with forty-plus years of independent, neighborhood care.
+    <div class="intro-strip">
+      <div class="intro-stat reveal in" style="transition-delay:0s">
+        <div class="num">4<span class="plus">+</span></div>
+        <div class="label">Active ventures across four industries</div>
+      </div>
+      <div class="intro-stat reveal in" style="transition-delay:0.1s">
+        <div class="num">15<span class="plus">+</span></div>
+        <div class="label">Building personal relationships and partnerships that deliver</div>
+      </div>
+      <div class="intro-stat reveal in" style="transition-delay:0.2s">
+        <div class="num">5<span class="plus"></span></div>
+        <div class="label">Continents with active collaborations and partnerships</div>
+      </div>
+      <div class="intro-stat reveal in" style="transition-delay:0.3s">
+        <div class="num">∞<span class="plus"></span></div>
+        <div class="label">New York standard · global perspective</div>
+      </div>
+    </div>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span class="marquee-item">Earned credibility<span class="dot">✦</span></span>
+        <span class="marquee-item">Quiet execution<span class="dot">✦</span></span>
+        <span class="marquee-item">Built for longevity<span class="dot">✦</span></span>
+        <span class="marquee-item">Operator first<span class="dot">✦</span></span>
+        <span class="marquee-item">New York standard<span class="dot">✦</span></span>
+        <span class="marquee-item">Global perspective<span class="dot">✦</span></span>
+        <span class="marquee-item">No shortcuts<span class="dot">✦</span></span>
+        <span class="marquee-item">Compounding relationships<span class="dot">✦</span></span>
+        <span class="marquee-item">Earned credibility<span class="dot">✦</span></span>
+        <span class="marquee-item">Quiet execution<span class="dot">✦</span></span>
+        <span class="marquee-item">Built for longevity<span class="dot">✦</span></span>
+        <span class="marquee-item">Operator first<span class="dot">✦</span></span>
+        <span class="marquee-item">New York standard<span class="dot">✦</span></span>
+        <span class="marquee-item">Global perspective<span class="dot">✦</span></span>
+        <span class="marquee-item">No shortcuts<span class="dot">✦</span></span>
+        <span class="marquee-item">Compounding relationships<span class="dot">✦</span></span>
+      </div>
+    </div>
+
+    <section class="manifesto">
+      <div class="manifesto-eyebrow reveal in"></div>
+      <div class="manifesto-text reveal reveal-d1 in">
+        The industry changes; the principle doesn't: <span class="accent">execution earns the room</span>. Joseph operates wherever business development, technology strategy, real estate, and partnerships intersect — and treats every relationship as a long-form asset.
+      </div>
+    </section>
+
+    <section class="home-preview">
+      <div class="home-preview-row">
+        <div class="preview-visual about-vis reveal reveal-slow in">
+          <img src="assets/joseph-depiction.png" alt="Joseph T. Galifi" class="preview-photo">
+        </div>
+        <div class="preview-content">
+          <div class="preview-eyebrow reveal in">
+            <span class="eyebrow eyebrow-muted">A Depiction</span>
+          </div>
+          <h3 class="preview-title reveal reveal-d1 in">
+            New York <span class="italic">made.</span><br>Globally <span class="italic">tested.</span>
+          </h3>
+          <p class="preview-body reveal reveal-d2 in">
+            An autodidact who chose the world as his classroom — built across boardrooms in Europe, Africa, Asia, and the Americas. He carries New York in his DNA: the pace, the edge, the standard.
+          </p>
+          <a class="preview-cta reveal reveal-d3 in" href="about.html">
+            <span>Read the story</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-preview">
+      <div class="home-preview-row reverse">
+        <div class="preview-content">
+          <div class="preview-eyebrow reveal in">
+            <span class="eyebrow eyebrow-muted">The Portfolio</span>
+          </div>
+          <h3 class="preview-title reveal reveal-d1 in">
+            Four Companies,<br>A Shared <span class="italic">Approach</span>
+          </h3>
+          <p class="preview-body reveal reveal-d2 in">
+            JTG Ventures · Genosis Inc. · Galifi Estates · Avanti Values. Each company is a deliberate angle on the same operating thesis — build with discipline, position with care, compound over time.
+          </p>
+          <a class="preview-cta reveal reveal-d3 in" href="work.html">
+            <span>See the portfolio</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+        <div class="preview-visual ventures-vis reveal reveal-slow in">
+          <div class="index"><span class="dot"></span>(03) · Ventures</div>
+          <div class="grid-logos">
+            <div class="cell">JTG Ventures</div>
+            <div class="cell" style="color:#6FB6FF">Genosis</div>
+            <div class="cell">Galifi Estates</div>
+            <div class="cell">Avanti Values</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="capabilities">
+      <div class="capabilities-head">
+        <h3 class="reveal reveal-slow in">
+          Where his <span class="italic">work</span> lives.
+        </h3>
+      </div>
+      <div class="capabilities-grid reveal in">
+        <div class="capability">
+          <div class="num">(i)</div>
+          <h5>Business Development</h5>
+          <p>Building, advising, and accelerating ventures across tech and media, hospitality, construction, professional services, and beyond.</p>
+        </div>
+        <div class="capability">
+          <div class="num">(ii)</div>
+          <h5>Emerging Technology</h5>
+          <p>Architecting the systems that move economies forward — from AI-enabled platforms and intelligent infrastructure deployed at sovereign scale.</p>
+        </div>
+        <div class="capability">
+          <div class="num">(iii)</div>
+          <h5>Real Estate</h5>
+          <p>Building, repositioning, and stewarding real assets with the patience of long capital and the precision of trusted relationships.</p>
+        </div>
+        <div class="capability">
+          <div class="num">(iv)</div>
+          <h5>Partnerships &amp; Acquisitions</h5>
+          <p>Partnering with profitable businesses and unlocking what was always there. Relationship-first, with operational depth, sharper positioning, and broader distribution.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="eyebrow reveal in">— A Considered Introduction —</div>
+      <h3 class="reveal reveal-d1 in">
+        The work <span class="italic">speaks.</span><br>The conversation begins here.
+      </h3>
+      <p class="reveal reveal-d2 in">
+        Whether it's a venture, a partnership, or a question worth asking — selectively open to what comes next.
       </p>
-      <a class="btn btn-ghost" href="doctors.html">Meet The Team <span class="arrow"></span></a>
-    </div>
-
-    <div class="teaser-doctors">
-      <a class="teaser-doc" href="doctors.html#dr-pieroni">
-        <div class="teaser-portrait">
-          <img src="assets/dr-pieroni.jpg" alt="Dr. Bryan D. Pieroni, D.D.S." />
-        </div>
-        <div class="teaser-meta">
-          <div class="teaser-name">Dr. Bryan D. Pieroni<i>, D.D.S.</i></div>
-          <span class="teaser-link">View bio <span class="arrow"></span></span>
-        </div>
-      </a>
-      <a class="teaser-doc" href="doctors.html#dr-fiorello">
-        <div class="teaser-portrait">
-          <img src="assets/dr-fiorello.jpg" alt="Dr. Mark Fiorello, D.D.S." />
-        </div>
-        <div class="teaser-meta">
-          <div class="teaser-name">Dr. Mark Fiorello<i>, D.D.S.</i></div>
-          <span class="teaser-link">View bio <span class="arrow"></span></span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 3 — OUR PRACTICE (HOMEPAGE TEASER → practice.html)
-     ============================================================ -->
-<section class="scaffold practice-teaser" id="mission" aria-label="Our Practice">
-  <div class="label"><span class="num">03</span>Our Practice</div>
-  <figure class="practice-photo">
-    <img src="assets/full-team.jpg" alt="The full Pieroni &amp; Fiorello team at the Clove Road office" />
-    <figcaption>Our team &mdash; Clove Road, Staten Island</figcaption>
-  </figure>
-  <div class="practice-teaser-grid">
-    <div>
-      <h2>The kind of dentistry <em>that's getting harder to find.</em></h2>
-      <p class="summary">
-        Independent ownership lets us run the practice the way dentistry was always
-        meant to be run &mdash; unhurried appointments, continuity of care, and the
-        same familiar faces every visit. Forty-plus years on Clove Road, doctor-owned
-        from day one, and a quiet, state-of-the-art office refined to feel less
-        like a clinic and more like home.
-      </p>
-      <ul class="quick-list">
-        <li><b>40+ years</b> on Clove Road</li>
-        <li><b>100%</b> doctor-owned</li>
-        <li><b>Modern</b> operatories &amp; in-house imaging</li>
-        <li><b>Same-day</b> emergency appointments</li>
-      </ul>
-      <a class="btn btn-ghost" href="practice.html">Inside Our Practice <span class="arrow"></span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SECTION 4 — SERVICES (HOMEPAGE TEASER → services.html)
-     ============================================================ -->
-<section class="scaffold services-teaser" id="services" aria-label="Services">
-  <div class="label"><span class="num">04</span>Services</div>
-  <div class="services-teaser-head">
-    <h2>Everything our families need, <em>under one roof.</em></h2>
-    <a class="btn btn-ghost" href="services.html">View All Services <span class="arrow"></span></a>
-  </div>
-  <ul class="services-quick">
-    <li><a href="services.html#general"><span>01</span>General Dentistry</a></li>
-    <li><a href="services.html#cosmetic"><span>02</span>Cosmetic</a></li>
-    <li><a href="services.html#veneers"><span>03</span>Veneers</a></li>
-    <li><a href="services.html#whitening"><span>04</span>Teeth Whitening</a></li>
-    <li><a href="services.html#invisalign"><span>05</span>Invisalign</a></li>
-    <li><a href="services.html#implants"><span>06</span>Implants &amp; All-on-X</a></li>
-    <li><a href="services.html#root-canals"><span>07</span>Root Canals</a></li>
-    <li><a href="services.html#laser"><span>08</span>Laser Dentistry</a></li>
-    <li><a href="services.html#emergency"><span>09</span>Emergency</a></li>
-  </ul>
-</section>
-
-<!-- ============================================================
-     SECTION 5 — SMILES & STORIES (homepage testimonial teaser)
-     ============================================================ -->
-<section class="scaffold stories-teaser" id="testimonials" aria-label="Smiles & Stories">
-  <div class="label"><span class="num">05</span>Smiles &amp; Stories</div>
-  <div class="scaffold-grid">
-    <div>
-      <h2>Forty years of <em>familiar smiles.</em></h2>
-      <p class="summary">
-        Four decades in one neighborhood means something. It means watching kids grow into parents,
-        parents into grandparents, and entire families build a lifetime of healthy smiles right here
-        in our chairs. That's the kind of relationship we've built our practice on, and it's
-        the kind we hope to build with you.
-      </p>
-      <div class="stars-line">
-        <span class="row">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <span>Trusted across the North Shore</span>
+      <div class="cta-band-actions reveal reveal-d3 in">
+        <a class="preview-cta" href="about.html">
+          <span>About Joseph</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="preview-cta" href="contact.html" style="border-color:var(--brass);color:var(--brass-soft)">
+          <span>Get in touch</span>
+          <span class="arrow">→</span>
+        </a>
       </div>
-    </div>
-    <!-- PHOTO PLACEHOLDER (removed for now — drop a photo back in here as the
-         portfolio grows; restore the block below and the grid returns to 2-up):
-    <div>
-      <span class="reel-thumb">
-        <img src="assets/smile.jpg" alt="A patient's bright, healthy smile" />
-      </span>
-    </div>
-    -->
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- ============================================================
-     SECTION 6 — VISIT (HOMEPAGE TEASER → visit.html)
-     ============================================================ -->
-<section class="scaffold visit-teaser" id="contact" aria-label="Visit">
-  <div class="label"><span class="num">06</span>Visit</div>
-  <div class="visit-teaser-grid">
-    <div class="visit-teaser-copy">
-      <h2>Make yourself <em>at home.</em></h2>
-      <p class="summary">
-        Two ways to reach us &mdash; pick up the phone, or send a note. We answer
-        both ourselves. New patients welcome; emergencies seen same-day.
-      </p>
-      <div class="visit-teaser-actions">
-        <a class="btn btn-primary" href="visit.html">Book a Visit <span class="arrow"></span></a>
-        <a class="btn btn-ghost" href="tel:+17184425319">Call 718-442-5319</a>
-      </div>
+  <footer class="footer">
+    <a class="footer-mark" href="index.html">Joseph T. <span>Galifi</span></a>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/joseph-galifi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://www.instagram.com/josephgalifi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+      <a href="https://x.com/joegalifi" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
     </div>
-    <div class="visit-teaser-info">
-      <div class="vt-block">
-        <span class="vt-label">Find Us</span>
-        <p>763 Clove Road<br/>Staten Island, NY 10310</p>
-      </div>
-      <div class="vt-block">
-        <span class="vt-label">Hours</span>
-        <p>Mon &middot; Tue 11&ndash;8<br/>Wed 9&ndash;2 &middot; Thu 8&ndash;5<br/><i>Fri &middot; Sun closed</i></p>
-      </div>
-      <div class="vt-block">
-        <span class="vt-label">Emergencies</span>
-        <p><a href="tel:+17184425319">Same-day appointments</a> held open every week.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-</div>
-<!-- ============ /CHARCOAL ZONE ============ -->
-
-<!-- ============ FOOTER ============ -->
-<footer class="site">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="name">Pieroni &amp; Fiorello<br/>D.D.S.</div>
-      <div class="since">— Serving Staten Island since 1982 —</div>
-      <p>An independent, doctor-owned general dental practice on the North Shore. Quality, unhurried care for families across generations.</p>
-    </div>
-    <div>
-      <h4>Visit</h4>
-      <ul>
-        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=763+Clove+Road+Staten+Island+NY+10310" target="_blank" rel="noopener noreferrer">763 Clove Road<br/>Staten Island, NY 10310</a></li>
-        <li><a href="tel:+17184425319">718-442-5319</a></li>
-        <li><a href="visit.html#book">Contact Us</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Hours</h4>
-      <ul>
-        <li>Mon – Tue · 11–8</li>
-        <li>Wednesday · 9–2</li>
-        <li>Thursday · 8–5</li>
-        <li>Friday · Closed</li>
-        <li>Saturday · Hours varied</li>
-        <li>Sunday · Closed</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Practice</h4>
-      <ul>
-        <li><a href="practice.html">Our Practice</a></li>
-        <li><a href="doctors.html">Doctors &amp; Team</a></li>
-        <li><a href="services.html">Services</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Pieroni &amp; Fiorello D.D.S. — All rights reserved.</span>
-    <nav class="footer-legal" aria-label="Legal">
+    <div class="footer-copyright">© 2026 · All Rights Reserved</div>
+    <div class="footer-legal">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="cookies.html">Cookies</a>
       <a href="accessibility.html">Accessibility</a>
-    </nav>
-  </div>
-</footer>
+    </div>
+  </footer>
 
-<script src="assets/nav.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
